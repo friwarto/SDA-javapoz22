@@ -8,7 +8,8 @@ public class Zadanie1 {
 		
 		System.out.println("Wybierz figure: 1) Prostokat; 2) Trojkat; 3) Kolo");
 		int wybor = sc.nextInt();
-		
+
+		Shape shape = null;
 		switch(wybor) {
 			case 1:
 				System.out.println("Podaj dlugosc pierwszego boku:");
@@ -16,28 +17,27 @@ public class Zadanie1 {
 				System.out.println("Podaj dlugosc drugiego boku:");
 				int bokB = sc.nextInt();
 				
-				Rectangle r = new Rectangle(bokA, bokB);
-				System.out.println("Pole prostokata: " + r.getArea());
-				System.out.println("Obwod prostokata: " + r.getPerimeter());
+				shape = new Rectangle(bokA, bokB);
 			break;
 			
 			case 2:
 				System.out.println("Podaj dlugosc boku:");
 				int side = sc.nextInt();
 				
-				Triangle t = new Triangle(side);
-				System.out.println("Pole trojkata: " + t.getArea());
-				System.out.println("Obwod trojkata: " + t.getPerimeter());
+				shape = new Triangle(side);
 			break;
 			
 			case 3:
 				System.out.println("Podaj promien kola:");
 				int radius = sc.nextInt();
 				
-				Circle c = new Circle(radius);
-				System.out.println("Pole kola: " + c.getArea());
-				System.out.println("Obwod kola: " + c.getPerimeter());
+				shape = new Circle(radius);
 			break;
+		}
+		
+		if(shape != null) {
+			System.out.println("Pole: " + shape.getArea());
+			System.out.println("Obwod: " + shape.getPerimeter());
 		}
 	}
 }
