@@ -26,5 +26,10 @@ public class Daty {
 		System.out.println(
 			"Twoje urodziny (" + thisYear + ") wypadaja w " + thisYear.getDayOfWeek()
 		);
+		
+		// -- 
+		
+		Period difference = birth.until(LocalDate.now());
+		System.out.println("Masz " + difference.getYears() + " lat");
 	}
 }
