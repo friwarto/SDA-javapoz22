@@ -12,6 +12,10 @@ public class Daty {
 		System.out.println("Podaj date urodzenia (RRRR-MM-DD):");
 		LocalDate birth = LocalDate.parse(sc.nextLine());
 		
-		System.out.println(birth);
+		if(birth.isLeapYear()) {
+			System.out.println("Urodziles sie w roku przestepnym");
+		} else {
+			System.out.println("Urodziles sie w roku nie-przestepnym");
+		}
 	}
 }
