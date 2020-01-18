@@ -19,5 +19,12 @@ public class Daty {
 		}
 		
 		System.out.println("Urodziles sie w " + birth.getDayOfWeek());
+		
+		// --
+		
+		LocalDate thisYear = birth.withYear( LocalDate.now().getYear() );
+		System.out.println(
+			"Twoje urodziny (" + thisYear + ") wypadaja w " + thisYear.getDayOfWeek()
+		);
 	}
 }
