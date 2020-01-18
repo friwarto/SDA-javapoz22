@@ -33,6 +33,10 @@ public class Zadanie1 {
 				
 				shape = new Circle(radius);
 			break;
+			
+			default:
+				System.out.println("Nieprawidlowy wybor!");
+				System.exit(1);
 		}
 		
 		if(shape != null) {
