@@ -36,19 +36,19 @@ public class Program {
 		Converter conv = null;
 		switch(Math.abs(choice)) {
 			case 1:
-			//	conv = new MileToKilometreConverter();
+				conv = new MileToKilometreConverter();
 			break;
 
 			case 2:
-			//	conv = new NauticalMileToKilometreConverter();
+				conv = new NauticalMileToKilometreConverter();
 			break;
 
 			case 3:
-			//	conv = new FeetToMetreConverter();
+				conv = new FeetToMetreConverter();
 			break;
 
 			case 4:
-			//	conv = new InchToCentimetreConverter();
+				conv = new InchToCentimetreConverter();
 			break;
 
 			case 5:
@@ -56,55 +56,55 @@ public class Program {
 			break;
 
 			case 6:
-			//	conv = new GallonUsToLitreConverter();
+				conv = new GallonUsToLitreConverter();
 			break;
 
 			case 7:
-			//	conv = new GallonImperialToLitreConverter();
+				conv = new GallonImperialToLitreConverter();
 			break;
 
 			case 8:
-			//	conv = new PoundToKilogramConverter();
+				conv = new PoundToKilogramConverter();
 			break;
 			
 			case 9:
-			//	conv = new StoneToKilogrammeConverter();
+				conv = new StoneToKilogrammeConverter();
 			break;
 
 			case 10:
-			//	conv = new CelciusToFahrenheitConverter();
+				conv = new CelciusToFahrenheitConverter();
 			break;
 			
 			case 11:
-			//	conv = new CelciusToRankineConverter();
+				conv = new CelciusToRankineConverter();
 			break;
 
 			case 12:
-			//	conv = new CelciusToKelvinConverter();
+				conv = new CelciusToKelvinConverter();
 			break;
 
 			case 13:
-			//	conv = new FahrenheitToRankineConverter();
+				conv = new FahrenheitToRankineConverter();
 			break;
 			
 			case 14:
-			//	conv = new FahrenheitToKelvinConverter();
+				conv = new FahrenheitToKelvinConverter();
 			break;
 			
 			case 15:
-			//	conv = new RankineToKelvinConverter();
+				conv = new RankineToKelvinConverter();
 			break;
 
 			case 16:
-			//	conv = new KilowatthourToJouleConverter();
+				conv = new KilowatthourToJouleConverter();
 			break;
 			
 			case 17:
-			//	conv = new CalorieToJouleConverter();
+				conv = new CalorieToJouleConverter();
 			break;
 
 			case 18:
-			//	conv = new HorsepowerToWattConverter();
+				conv = new HorsepowerToWattConverter();
 			break;
 
 			case 19:
