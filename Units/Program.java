@@ -98,7 +98,7 @@ public class Program {
 			case 16:
 				conv = new KilowatthourToJouleConverter();
 			break;
-			
+
 			case 17:
 				conv = new CalorieToJouleConverter();
 			break;
