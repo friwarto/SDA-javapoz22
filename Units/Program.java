@@ -38,7 +38,7 @@ public class Program {
 			case 1:
 				conv = new MileToKilometreConverter();
 			break;
-/*
+
 			case 2:
 				conv = new NauticalMileToKilometreConverter();
 			break;
@@ -105,7 +105,7 @@ public class Program {
 
 			case 18:
 				conv = new HorsepowerToWattConverter();
-			break; */
+			break; 
 
 			case 19:
 				conv = new DegreeToRadianConverter();
