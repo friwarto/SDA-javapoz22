@@ -8,7 +8,10 @@ import java.util.Scanner;
 
 public class Daty {
 	public static void main(String[] args) {
-		LocalDate date = LocalDate.now();
-		System.out.println(date);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Podaj date urodzenia (RRRR-MM-DD):");
+		LocalDate birth = LocalDate.parse(sc.nextLine());
+		
+		System.out.println(birth);
 	}
 }
