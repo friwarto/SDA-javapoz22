@@ -105,7 +105,7 @@ public class Program {
 
 			case 18:
 				conv = new HorsepowerToWattConverter();
-			break; 
+			break;
 
 			case 19:
 				conv = new DegreeToRadianConverter();
