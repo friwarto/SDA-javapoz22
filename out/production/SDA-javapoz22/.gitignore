@@ -1,7 +1,0 @@
-# Do not include compilation artifacts
-*.class
-*.jar
-
-# Do not include IDE-specific files
-.idea/
-*.geany
