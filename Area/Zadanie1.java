@@ -22,6 +22,12 @@ public class Zadanie1 {
 			break;
 			
 			case 2:
+				System.out.println("Podaj dlugosc boku:");
+				int side = sc.nextInt();
+				
+				Triangle t = new Triangle(side);
+				System.out.println("Pole trojkata: " + t.getArea());
+				System.out.println("Obwod trojkata: " + t.getPerimeter());
 			break;
 			
 			case 3:
