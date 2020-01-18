@@ -33,7 +33,7 @@ public class Program {
 		int choice;
 		choice = sc.nextInt();
 
-		Converter conv = null;
+		RankineToKelvinConverter conv = null;
 		switch(Math.abs(choice)) {
 			case 1:
 				conv = new MileToKilometreConverter();
@@ -90,22 +90,21 @@ public class Program {
 			case 14:
 				conv = new FahrenheitToKelvinConverter();
 			break;
-			
 			case 15:
 				conv = new RankineToKelvinConverter();
 			break;
 
 			case 16:
-				conv = new KilowatthourToJouleConverter();
+			conv = new KilowatthourToJouleConverter();
 			break;
-			
+
 			case 17:
 				conv = new CalorieToJouleConverter();
-			break;
+				break;
 
 			case 18:
 				conv = new HorsepowerToWattConverter();
-			break;
+				break;
 
 			case 19:
 				conv = new DegreeToRadianConverter();
