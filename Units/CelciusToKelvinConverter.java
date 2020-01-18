@@ -1,5 +1,3 @@
-package Units;
-
 public class CelciusToKelvinConverter extends Converter {
     public String getPrimaryUnit() {
         return "C";

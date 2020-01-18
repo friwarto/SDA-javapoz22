@@ -1,5 +1,3 @@
-package Units;
-
 public abstract class Converter {
 
 	public abstract String getPrimaryUnit();

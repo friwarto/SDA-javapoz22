@@ -1,5 +1,3 @@
-package Units;
-
 public class DegreeToRadianConverter extends Converter {
 
 	public String getPrimaryUnit() {

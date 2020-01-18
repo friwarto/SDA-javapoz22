@@ -1,5 +1,3 @@
-package Units;
-
 import java.util.Scanner;
 
 public class Program {
