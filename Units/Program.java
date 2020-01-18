@@ -24,14 +24,15 @@ public class Program {
 			"14. Temperatura (skala Fahrenheita) -> temperatura (Kelwiny)\n" +
 			"15. Temperatura (skala Rankeine'a) -> temperatura (Kelwiny)\n" +
 			"16. Kilowatogodziny (kWh) -> dzule (J)\n" +
-			"17. Konie mechaniczne (hp) -> waty (W)\n" +
-			"18. Stopnie -> radiany\n"
+			"17. Kalorie (cal) -> dzule (J)\n" +
+			"18. Konie mechaniczne (hp) -> waty (W)\n" +
+			"19. Stopnie -> radiany\n"
 		);
 
 		int choice;
 		choice = sc.nextInt();
 
-		Converter conv;
+		Converter conv = null;
 		switch(Math.abs(choice)) {
 			case 1:
 				conv = new MileToKilometreConverter();
@@ -96,13 +97,17 @@ public class Program {
 			case 16:
 				conv = new KilowatthourToJouleConverter();
 			break;
-
+			
 			case 17:
-				conv = new HorsepowerToWattConverter();
+				conv = new CalorieToJouleConverter();
 			break;
 
 			case 18:
-				conv = new AnglesToRadiansConverter();
+				conv = new HorsepowerToWattConverter();
+			break;
+
+			case 19:
+				conv = new DegreeToRadianConverter();
 			break;
 
 			default:
