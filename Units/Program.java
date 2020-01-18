@@ -96,12 +96,12 @@ public class Program {
 			break;
 
 			case 16:
-				conv = new KilowatthourToJouleConverter();
+			conv = new KilowatthourToJouleConverter();
 			break;
 
 			case 17:
 				conv = new CalorieToJouleConverter();
-			break;
+				break;
 
 			case 18:
 				conv = new HorsepowerToWattConverter();
