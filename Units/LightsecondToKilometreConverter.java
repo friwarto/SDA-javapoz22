@@ -2,7 +2,7 @@ package Units;
 
 public class LightsecondToKilometreConverter extends Converter {
     public String getPrimaryUnit() {
-        return "light year";
+        return "light second";
     }
 
     public String getSecondaryUnit() {
@@ -10,10 +10,10 @@ public class LightsecondToKilometreConverter extends Converter {
     }
 
     public double convert(double value) {
-        return value * 9.4607305 * Math.pow(10,12);
+        return value * 29979246;
     }
 
     public double inverseConvert(double value) {
-        return value * 1.05702341 * Math.pow(10, -13);
+        return value * 3.3356410 * Math.pow(10,-6);
     }
 }
