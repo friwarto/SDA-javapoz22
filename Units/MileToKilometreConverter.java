@@ -15,7 +15,7 @@ public class MileToKilometreConverter extends Converter {
 
     @Override
     public double convert(double value) {
-        return value/0.62137;
+        return value * 1.609344;
     }
 
     @Override
