@@ -25,6 +25,12 @@ public class Zadanie1 {
 			break;
 			
 			case 3:
+				System.out.println("Podaj promien kola:");
+				int radius = sc.nextInt();
+				
+				Circle c = new Circle(radius);
+				System.out.println("Pole kola: " + c.getArea());
+				System.out.println("Obwod kola: " + c.getPerimeter());
 			break;
 		}
 	}
