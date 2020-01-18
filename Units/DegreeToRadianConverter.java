@@ -15,6 +15,7 @@ public class DegreeToRadianConverter extends Converter {
 	}
 	
 	public double inverseConvert(double value) {
+
 		return value * 180.0 / Math.PI;
 	}
 
