@@ -35,7 +35,7 @@ public class Program {
 
 		Converter conv = null;
 		switch(Math.abs(choice)) {
-			case 1:
+		/*	case 1:
 				conv = new MileToKilometreConverter();
 			break;
 
@@ -81,13 +81,13 @@ public class Program {
 
 			case 12:
 				conv = new CelciusToKelvinConverter();
-			break;
+			break; */
 
 			case 13:
 				conv = new FahrenheitToRankineConverter();
 			break;
 			
-			case 14:
+		/*	case 14:
 				conv = new FahrenheitToKelvinConverter();
 			break;
 			
@@ -105,7 +105,7 @@ public class Program {
 
 			case 18:
 				conv = new HorsepowerToWattConverter();
-			break;
+			break;*/
 
 			case 19:
 				conv = new DegreeToRadianConverter();
