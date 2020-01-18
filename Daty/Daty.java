@@ -7,6 +7,11 @@ import java.time.Period;
 import java.util.Scanner;
 
 public class Daty {
+
+	public static LocalDate anotherYear(LocalDate ld, int year) {
+		return LocalDate.of(year, ld.getMonthValue(), ld.getDayOfMonth());
+	}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Podaj date urodzenia (RRRR-MM-DD):");
@@ -22,7 +27,8 @@ public class Daty {
 		
 		// --
 		
-		LocalDate thisYear = birth.withYear( LocalDate.now().getYear() );
+		// LocalDate thisYear = birth.withYear( LocalDate.now().getYear() );
+		LocalDate thisYear = anotherYear(birth, LocalDate.now().getYear()); 
 		System.out.println(
 			"Twoje urodziny (" + thisYear + ") wypadaja w " + thisYear.getDayOfWeek()
 		);
@@ -33,3 +39,10 @@ public class Daty {
 		System.out.println("Masz " + difference.getYears() + " lat");
 	}
 }
+
+
+
+
+
+
+
