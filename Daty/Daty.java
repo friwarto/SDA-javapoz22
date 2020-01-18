@@ -17,5 +17,7 @@ public class Daty {
 		} else {
 			System.out.println("Urodziles sie w roku nie-przestepnym");
 		}
+		
+		System.out.println("Urodziles sie w " + birth.getDayOfWeek());
 	}
 }
