@@ -33,7 +33,7 @@ public class Program {
 		int choice;
 		choice = sc.nextInt();
 
-		RankineToKelvinConverter conv = null;
+		Converter conv = null;
 		switch(Math.abs(choice)) {
 			case 1:
 				conv = new MileToKilometreConverter();
