@@ -33,7 +33,7 @@ public class Program {
 		int choice;
 		choice = sc.nextInt();
 
-		Converter conv = null;
+		GallonImperialToLitreConverter conv = null;
 		switch(Math.abs(choice)) {
 			case 1:
 				conv = new MileToKilometreConverter();
