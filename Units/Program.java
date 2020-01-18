@@ -7,7 +7,7 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print(
-			"Wybierz konwersje. Aby konwertowac B->A, zamiast A->B, podaj numer ujemny.\n" +
+			"Aby konwertowac B->A, zamiast A->B, podaj numer ujemny.\n" +
 			" 1. Mile -> kilometry\n" +
 			" 2. Mile morskie -> kilometry\n" +
 			" 3. Stopy -> metry\n" +
@@ -29,6 +29,7 @@ public class Program {
 			"19. Stopnie -> radiany\n"
 		);
 
+		System.out.print("Wybierz konwersje: ");
 		int choice;
 		choice = sc.nextInt();
 
@@ -115,7 +116,7 @@ public class Program {
 				System.exit(1);
 		}
 
-		System.out.println("Podaj wartosc:");
+		System.out.print("Podaj wartosc: ");
 		double value = sc.nextDouble();
 
 		if(choice > 0) {
