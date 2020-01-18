@@ -35,15 +35,15 @@ public class Program {
 
 		Converter conv = null;
 		switch(Math.abs(choice)) {
-			/* case 1:
+			case 1:
 				conv = new MileToKilometreConverter();
-			break; */
+			break;
 
 			case 2:
 				conv = new NauticalMileToKilometreConverter();
 			break;
 
-			/* case 3:
+			case 3:
 				conv = new FeetToMetreConverter();
 			break;
 
@@ -105,7 +105,7 @@ public class Program {
 
 			case 18:
 				conv = new HorsepowerToWattConverter();
-			break; */
+			break;
 
 			case 19:
 				conv = new DegreeToRadianConverter();

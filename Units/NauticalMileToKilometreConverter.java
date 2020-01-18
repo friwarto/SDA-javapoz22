@@ -11,10 +11,10 @@ public class NauticalMileToKilometreConverter extends Converter {
     }
 
     public double convert(double value) {
-        return value * 1.852;
+        return Math.round((value * 1.852) * 100.0) / 100.0;
     }
 
     public double inverseConvert(double value) {
-        return value / 1.852;
+        return Math.round((value / 1.852) * 100.0) / 100.0;
     }
 }
