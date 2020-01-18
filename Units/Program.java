@@ -35,6 +35,7 @@ public class Program {
 
 		Converter conv = null;
 		switch(Math.abs(choice)) {
+
 			case 1:
 				conv = new MileToKilometreConverter();
 			break;
@@ -61,7 +62,7 @@ public class Program {
 
 			case 7:
 				conv = new GallonImperialToLitreConverter();
-			break;
+			break;*/
 
 			case 8:
 				conv = new PoundToKilogramConverter();
