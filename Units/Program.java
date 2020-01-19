@@ -66,6 +66,7 @@ public class Program {
 			case 8:
 				conv = new PoundToKilogramConverter();
 				break;
+			break;
 
 			case 9:
 				conv = new StoneToKilogrammeConverter();
@@ -73,7 +74,7 @@ public class Program {
 
 			case 10:
 				conv = new CelciusToFahrenheitConverter();
-				break;
+			break;
 
 			case 11:
 				conv = new CelciusToRankineConverter();
@@ -91,12 +92,14 @@ public class Program {
 				conv = new FahrenheitToKelvinConverter();
 				break;
 
+
 			case 15:
 				conv = new RankineToKelvinConverter();
 				break;
 
 			case 16:
 				conv = new KilowatthourToJouleConverter();
+
 				break;
 
 			case 17:
