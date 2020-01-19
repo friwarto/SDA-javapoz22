@@ -1,13 +1,64 @@
 package Algorytmy;
 
 public class MergeSort {
-
+/*
+    public static List<Integer> merge(List<Integer> left, List<Integer> right) {
+        List<Integer> wynik = new List<>();
+    }
+*/
     public static void merge(long[] a, long[] left, long[] right) {
+        int count = 0;
+        int leftIndex = 0;
+        int rightIndex = 0;
 
+        // While both left[] and right[] are non-empty,
+        // we need to pick the smaller element from the start
+        while(count < a.length && leftIndex < left.length && rightIndex < right.length) {
+            if (left[leftIndex] < right[rightIndex]) {
+                a[count] = left[leftIndex];
+                leftIndex += 1;
+            } else {
+                a[count] = right[rightIndex];
+                rightIndex += 1;
+            }
+            count += 1;
+        }
+
+        // If there is still stuff left in left[], add it to a[]
+        while(leftIndex < left.length) {
+            a[count] = left[leftIndex];
+            leftIndex += 1;
+            count += 1;
+        }
+
+        // If there is still stuff left in right, add it to a[]
+        while(rightIndex < right.length) {
+            a[count] = right[rightIndex];
+            rightIndex += 1;
+            count += 1;
+        }
     }
 
     public static void sort(long[] a) {
+        int n = a.length;
+        if(n <= 1) return;
 
+        int half = n/2;
+
+        long[] left = new long[half];
+        for(int i = 0; i < half; ++i) {
+            left[i] = a[i];
+        }
+
+        long[] right = new long[n - half];
+        for(int i = 0; i < n - half; ++i) {
+            right[i] = a[half + i];
+        }
+
+        sort(left);
+        sort(right);
+
+        merge(a, left, right);
     }
 
     public static void main(String[] args) {
@@ -33,10 +84,9 @@ public class MergeSort {
 
         sort(liczby);
         for(int i = 0; i < liczby.length; ++i) {
-            if((i != 0) && (i % 15 == 0))
-                System.out.println(liczby[i]);
-            else
-                System.out.print(liczby[i] + ", ");
+            if((i != 0) && (i % 15 == 0)) System.out.println();
+
+            System.out.print(liczby[i] + ", ");
         }
     }
 }
