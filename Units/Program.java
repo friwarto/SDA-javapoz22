@@ -40,7 +40,7 @@ public class Program {
 				break;
 
 			case 2:
-			//	conv = new NauticalMileToKilometreConverter();
+				conv = new NauticalMileToKilometreConverter();
 				break;
 
 			case 3:
@@ -64,7 +64,7 @@ public class Program {
 				break;
 
 			case 8:
-			//	conv = new PoundToKilogramConverter();
+				conv = new PoundToKilogramConverter();
 				break;
 
 
@@ -81,7 +81,7 @@ public class Program {
 				break;
 
 			case 12:
-			//	conv = new CelciusToKelvinConverter();
+				conv = new CelciusToKelvinConverter();
 				break;
 
 			case 13:
@@ -94,7 +94,7 @@ public class Program {
 
 
 			case 15:
-			//	conv = new RankineToKelvinConverter();
+				conv = new RankineToKelvinConverter();
 				break;
 
 			case 16:
@@ -107,7 +107,7 @@ public class Program {
 				break;
 
 			case 18:
-			//	conv = new HorsepowerToWattConverter();
+				conv = new HorsepowerToWattConverter();
 				break;
 
 			case 19:
