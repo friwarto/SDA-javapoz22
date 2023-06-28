@@ -37,39 +37,40 @@ public class Program {
 		switch(Math.abs(choice)) {
 			case 1:
 				conv = new MileToKilometreConverter();
-			break;
+				break;
 
 			case 2:
 				conv = new NauticalMileToKilometreConverter();
-			break;
+				break;
 
 			case 3:
 				conv = new FeetToMetreConverter();
-			break;
+				break;
 
 			case 4:
 				conv = new InchToCentimetreConverter();
-			break;
+				break;
 
 			case 5:
 				conv = new LightsecondToKilometreConverter();
-			break;
+				break;
 
 			case 6:
 				conv = new GallonUsToLitreConverter();
-			break;
+				break;
 
 			case 7:
 				conv = new GallonImperialToLitreConverter();
-			break;
+				break;
 
 			case 8:
 				conv = new PoundToKilogramConverter();
-			break;
+				break;
+
 
 			case 9:
 				conv = new StoneToKilogrammeConverter();
-			break;
+				break;
 
 			case 10:
 				conv = new CelciusToFahrenheitConverter();
@@ -77,39 +78,41 @@ public class Program {
 
 			case 11:
 				conv = new CelciusToRankineConverter();
-			break;
+				break;
 
 			case 12:
 				conv = new CelciusToKelvinConverter();
-			break;
+				break;
 
 			case 13:
 				conv = new FahrenheitToRankineConverter();
-			break;
+				break;
 
 			case 14:
 				conv = new FahrenheitToKelvinConverter();
-			break;
+				break;
+
 
 			case 15:
 				conv = new RankineToKelvinConverter();
-			break;
+				break;
 
 			case 16:
 				conv = new KilowatthourToJouleConverter();
-			break;
+
+				break;
 
 			case 17:
 				conv = new CalorieToJouleConverter();
-			break;
+				break;
 
 			case 18:
 				conv = new HorsepowerToWattConverter();
-			break;
+				break;
 
 			case 19:
 				conv = new DegreeToRadianConverter();
-			break;
+				break;
 
 			default:
 				System.out.println("Nieprawidlowy wybor!");
